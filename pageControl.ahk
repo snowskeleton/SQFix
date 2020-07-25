@@ -73,18 +73,7 @@ Loop %lines% {
 	}
 return
 
-!t:: ; open ticket log/select SMS for ticket log
-If ThisPageIs("TicketNo") { ; open ticket log
-	FindButton("New Service Order")
-	TabTimes(0, 2, "space")
-	}
-Else If ThisPageIs("AddCustomerContact", false) { ; select SMS if the ticket log has focus
-	TabTimes(3)
-	send s
-	}
-return
-
-^v:: ; for just 9-6 scheduling, no box checking # service order
+!v:: ; for just 9-6 scheduling, no box checking # service order
 FindButton("Appointment Date", false)
 TabTimes(3)
 send 9

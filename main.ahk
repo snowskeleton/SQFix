@@ -8,7 +8,7 @@ CapsLock::send {Return}
 #IfWinNotActive, @
 
 #include functions.ahk
-#include clickButtons.ahk
+#include pageControl.ahk
 
 ; text replacement
 
@@ -16,7 +16,7 @@ CapsLock::send {Return}
 #include symptoms.ahk
 #include calling.ahk
 #include warehouseDetails.ahk
-#include singleKeys
+#include singleKeys.ahk
 #include things.ahk
 
 
